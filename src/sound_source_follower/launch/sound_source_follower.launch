@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="hark_sound_source_localization" name="hark_sound_loc"
+        type="localization_ROS_pseye.sh" output="screen"/>
+		<node pkg="action_controller" name="action_contrl"
+				type="action_controller" output="screen"/>
+		<node pkg="sound_source_follower" name="sound_source_follower" 
+				type="sound_source_follower" output="screen" />
+</launch>
